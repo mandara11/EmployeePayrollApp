@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="EmployeePayrollApp.css">
     <title>Employee Payroll Form</title>
 </head>
+
 <body>
-   <!-- UC1:- Ability to create an Employee Payroll System UI.
+    <!-- UC1:- Ability to create an Employee Payroll System UI.
              - Create an Employee Payroll Form as a webpage using HTML, CSS and add a header element on 
              top of the UI having text as ‘Employee Payroll’
              - Create a center align box using div tag.
@@ -23,5 +25,17 @@
             </div>
         </div>
     </header>
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save();return false">
+
+<!-- UC2:- Ability to create a Form Header and the Input Text Element for Name -->
+            <div class="form-head">Employee Payroll form</div>
+            <div class="row-content">
+                <label class="label text" for="name">Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
